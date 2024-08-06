@@ -1,0 +1,221 @@
+/*Written by: Thet Myat Noe 200590273*/
+
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto;
+    height:100vh;
+    background-color: #70818b;
+}
+/*the box for contact us*/
+.contact{
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: white;
+    width: 1200px;
+    height: 500px;
+}
+.contact.image{
+    position: relative;
+}
+/*image*/
+.image img{
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-bottom: 0;
+    width: auto;
+    height: 400px;
+}
+.heading-text{
+    font-family: kanit;
+    color: #70818b;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: -450px;
+    position: relative;
+}
+.form{
+    display: inline-block;
+    vertical-align: middle;
+}
+input[type=text] {
+    margin-top: -100px;
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: kanit;
+    margin-left: 400px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+input[type=email] {
+    width: 300px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: kanit;
+    margin-left: 400px;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+textarea{
+    width: 350px;
+    height: 150px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: kanit;
+    margin-left: 400px;
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 2px;
+    background-color: white;
+    resize: none;
+}
+input[type=submit] {
+    margin-top: -50px;
+    width: 100px;
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: kanit;
+    margin-left: 400px;
+    border: none;
+    background-color: #70818b;
+    color: white;
+    cursor: pointer;
+}
+.text{
+    display: grid;
+    font-family: kanit;
+    color: #70818b;
+    font-size: 20px;
+    margin-top: -330px;
+    margin-left: 800px;
+}
+
+.information .phone img{
+    width: 30px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 800px;
+}
+.information .email img{
+    width: 30px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 800px;
+}
+.information .add img{
+    width: 40px;
+    height: auto;
+    margin-top: 30px;
+    margin-left: 795px;
+}
+.information .phone .phone2{
+    font-family: kanit;
+    color: #70818b;
+    font-size: 15px;
+}
+.information .email .email2{
+    font-family: kanit;
+    color: #70818b;
+    font-size: 15px;
+}
+.information .add .address2{
+    font-family: kanit;
+    color: #70818b;
+    font-size: 15px;
+    margin-left: -8px;
+}
+/*1024 style laptop*/
+@media screen and (max-width: 1024px) {
+    .contact{
+        width: 1000px;
+        height: auto;
+    }
+    .contact .image img{
+        width: 250px;
+    }
+    .heading-text{
+        margin-left: 150px;
+    }
+    .form{
+        margin-left: -50px;
+    }
+    .form input[type=submit]{
+        margin-bottom: 20px;
+    }
+    .text{
+        margin-left: 750px;
+        margin-right: 50px;
+    }
+    .information{
+        margin-left: -30px;
+        margin-bottom: 20px;
+    }
+}
+/*768 style tablet*/
+/*the same as the last one but arrange the font sizes, margins and layout*/
+@media screen and (max-width: 768px) {
+    .contact{
+        margin-top: 120px;
+        margin-left: 5px;
+        margin-bottom: 100px;
+        width: 700px;
+        height: 500px;
+    }
+    .contact .image img{
+        margin-bottom: -200px;
+        width: 200px;
+        height: auto;
+    }
+    .heading-text{
+        margin-top: -170px;
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .form{
+        margin-left: -100px;
+        font-size: 10px;
+    }
+    .form input[type=submit]{
+        margin-bottom: 20px;
+    }
+    .text{
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+    .information .phone img{
+        margin-left: -50px;
+        margin-right: 0;
+    }
+    .information .email img{
+        margin-top: -100px;
+        margin-bottom: 25px;
+        margin-left: 135px;
+    }
+    .information .email2{
+        display: flex;
+        align-items: center;
+        margin-left: 170px;
+        margin-top: -45px;
+    }
+    .information .add img{
+        display: flex;
+        margin-top: -60px;
+        margin-left: 350px;
+        margin-bottom: 20px;
+    }
+    .information .address2{
+        display: grid;
+        text-align: right;
+        margin-right: 35px;
+        margin-top: -40px;
+    }
+    .information {
+        margin-left: 100px;
+        margin-top: -20px;
+    }
+}
+
