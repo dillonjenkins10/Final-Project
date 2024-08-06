@@ -1,0 +1,98 @@
+/* background colour */
+body{
+    background-color: beige;
+    font-family: sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.container > img{
+    padding-right: 75px;
+    padding-bottom: 30px;
+}
+/* styling for heading */
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 70px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+/*styling for the first text block */
+.text1{
+    margin-top: -20px;
+}
+.text1 > h3{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+}
+.text1 > p{
+    margin-top: -20px;
+    font-size: 20px;
+}
+/* styling for the second text */
+.text2{
+    text-align: center;
+}
+.text2 > h3{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.text2 > p{
+    margin-top: -30px;
+    font-size: 20px;
+}
+/* size adjustment for the first image */
+.container > img{
+    height: 400px;
+}
+/* size adjustment for the second image */
+.image2 > img{
+    height: 700px;
+}
+.image2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+/* underline the word polaroid */
+span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+/* media query for 1440 px */
+@media screen and (min-width:1440px){
+    .container > img{
+        width: 1700px;
+    }
+    .image2 > img{
+        width: 1500px;
+    }
+}
+/* media query for 768 px */
+@media screen and (max-width:768px){
+    .container > img {
+        height: 300px;
+        width: 450px;
+    }
+    .text1{
+        margin-top: -70px;
+    }
+    .text1 > p{
+        font-size: 15px;
+    }
+    .text2 > h3{
+        padding-left: 260px;
+    }
+    .text2 > p{
+        padding-left: 260px;
+    }
+
+}
+
+
+
