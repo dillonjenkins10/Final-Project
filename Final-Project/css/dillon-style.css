@@ -1,0 +1,284 @@
+/* Dillon Jenkins */
+/* CSS for the product pages */
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    align-items: center;
+}
+
+/* setting fonts */
+h1,h2,h3,h4,h5,h6{
+    font-family: "Kanit", sans-serif;
+    color: #0e0e0e;
+}
+
+p, a, button{
+    font-family: "Noto Sans Japanese", sans-serif;
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+/* setting up the margin */
+main{
+    margin-left: 150px;
+}
+
+.flexbox{
+    display: flex;
+}
+
+/* setting up the picture section of the product page */
+.product-image{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+/* formatting the image */
+.product-image > div > img{
+    border: solid 10px #dec69e;
+    height: 450px;
+    width: auto;
+}
+
+/* text section below the img */
+.product-text{
+    margin-right: 150px;
+    margin-top: 100px;
+}
+
+/* setting up the button/price area */
+.product-text > div{
+    display: flex;
+}
+
+/* making the add to cart button look nice */
+.product-text > div > button{
+    margin: 0;
+    padding: 5px;
+    height: 50px;
+    width: 150px;
+    background-color: #1b8c0e;
+    border: solid 2px #1b8c0e;
+    font-size: 15px;
+    font-weight: bold;
+    color: #f8f8f8;
+}
+
+/* formatting the price text */
+.product-text > div > p{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* aside fomatting */
+aside{
+    margin: 0;
+    padding: 25px;
+    background-color: lightgray;
+}
+
+/* separating the articles */
+aside > article:nth-child(1){
+    margin-bottom: 30px;
+}
+
+/* formatting the product images */
+aside > article > img{
+    border: solid 5px #dec69e;
+    height: 250px;
+    width: auto;
+}
+
+/* setting up price and view page button like before */
+aside > article > div{
+    display: flex;
+}
+
+/* making the view page button look good */
+aside > article > div > a > button{
+    margin: 0;
+    margin-top: 12px;
+    padding: 5px;
+    height: 30px;
+    width: 80px;
+    background-color: #dec69e;
+    border: solid 2px #dec69e;
+}
+
+/* formatting the price beside the view page button */
+aside > article > div > h5{
+    margin-top: 17px;
+    margin-left: 20px;
+
+}
+
+footer{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+}
+
+footer > div{
+    margin: 20px;
+}
+
+footer > div:nth-child(1){
+    flex-grow: 1;
+}
+
+footer > div > a > img{
+    height: 100px;
+    width: auto;
+}
+
+footer > div > form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer > div > form > p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer > div > form > input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: solid 2px #0e0e0e;
+    color: #f8f8f8;
+    background-color: #525252;
+}
+
+footer > div > form > input::placeholder{
+    color: #f8f8f8;
+}
+
+/* responsive design */
+@media screen and (max-width: 1024px){
+    /* shrink images at this size */
+    .product-image > div > img{
+        height: 400px;
+    }
+
+    /* shrink article images too */
+    aside > article > img{
+        height: 250px
+    }
+}
+
+@media screen and (max-width: 960px){
+    /* change margins at this size */
+    main{
+        margin-left: 120px; 
+        flex-grow: 1;
+    }
+
+    /* make the image smaller */
+    .product-image > div > img{
+        height: 380px;
+        width: auto;
+    }
+
+    /*increse the margin at the bottom at this size*/
+    .product-text{
+        margin-bottom: 60px;
+    }
+
+    /* shrink article images too */
+    aside > article > img{
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    /* margin can be reduced */
+    main{
+        margin-left: 80px; 
+        flex-grow: 1;
+    }
+
+    /* make the image smaller */
+    .product-image > div > img{
+        height: 300px;
+        width: auto;
+    }
+
+    /* increase the size of the margin at the bottom */
+    .product-text{
+        margin-bottom: 100px;
+    }
+
+    h4{
+        font-size: 25px;
+        
+    }
+
+    /* shrink pictures on the aside */
+    aside > article > img{
+        height: 160px;
+        width: auto;
+    }
+
+    /* stack the price on top of the button*/
+    aside > article > div{
+        flex-direction: column-reverse
+    }
+    
+    /* make the view page buttons larger for use on a
+    touch screen */
+    aside > article > div > a > button{
+        width: 120px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    /* increse the size of the price font as well */
+    h5{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 427px){
+    /* for phone screens, put the aside on the bottom */
+    .flexbox{
+        flex-direction: column;
+    }
+
+    main{
+        margin: 12%
+    }
+
+    h1{
+        margin: 0;
+    }
+
+    .product-text{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .product-text > div{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100px;
+    }
+    
+    aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside > article > img{
+        height: 250px;
+    }
+}
