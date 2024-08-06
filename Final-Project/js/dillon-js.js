@@ -1,7 +1,8 @@
-//jquery for lms600 page
+//Dillon Jenkins 200588407
+
 $(document).ready(function(){
     $(function(){
-        //$("#header").load("header.html");
+        $("#header").load("header.html");
         $("#footer").load("footer.html");
     });
 
