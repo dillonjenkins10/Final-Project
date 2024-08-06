@@ -3,6 +3,39 @@ body{
     background-color: beige;
     font-family: sans-serif;
 }
+
+/* header styling */
+header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+header > div{
+    margin-left: 20px; 
+    height: 90%;
+    width: auto;
+    flex-grow: 1;
+}
+
+header > div > a > img{
+    height: 100%;
+    width: auto;
+}
+
+header > nav{
+    padding: 40px;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li{
+    padding: 0 20px;
+    list-style: none;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
@@ -64,6 +97,51 @@ span{
     text-decoration: underline;
     font-weight: bold;
 }
+
+/* footer styling */
+footer{
+    display: flex;
+    background-color: grey;
+    align-items: center;
+}
+
+footer > div{
+    margin: 20px;
+}
+
+footer > div:nth-child(1){
+    flex-grow: 1;
+}
+
+footer > div > a > img{
+    height: 100px;
+    width: auto;
+}
+
+footer > div > form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+footer > div > form > p{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+footer > div > form > input{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: solid 2px #0e0e0e;
+    color: #f8f8f8;
+    background-color: #525252;
+}
+
+footer > div > form > input::placeholder{
+    color: #f8f8f8;
+}
+
 /* media query for 1440 px */
 @media screen and (min-width:1440px){
     .container > img{

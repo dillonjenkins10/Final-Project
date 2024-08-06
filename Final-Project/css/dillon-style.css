@@ -20,6 +20,38 @@ p, a, button{
     color: #0e0e0e;
 }
 
+/* header styling */
+header{
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+
+header > div{
+    margin-left: 20px; 
+    height: 90%;
+    width: auto;
+    flex-grow: 1;
+}
+
+header > div > a > img{
+    height: 100%;
+    width: auto;
+}
+
+header > nav{
+    padding: 40px;
+}
+
+header > nav > ul{
+    display: flex;
+}
+
+header > nav > ul > li{
+    padding: 0 20px;
+    list-style: none;
+}
+
 /* setting up the margin */
 main{
     margin-left: 150px;
@@ -119,6 +151,7 @@ aside > article > div > h5{
 
 }
 
+/* footer styling */
 footer{
     display: flex;
     background-color: grey;
